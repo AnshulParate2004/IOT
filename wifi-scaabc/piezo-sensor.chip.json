@@ -1,0 +1,15 @@
+{
+  "name": "Piezoelectric Sensor",
+  "author": "Wokwi User",
+  "pins": ["VCC", "GND", "SIG"],
+  "controls": [
+    {
+      "id": "intensity",
+      "label": "Vibration Intensity (%)",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ]
+}

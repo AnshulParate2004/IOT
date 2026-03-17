@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "author": "Wokwi Piezo Bed Project",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 100, "left": 0, "attrs": {} },
+    {
+      "type": "chip-piezo-sensor",
+      "id": "left",
+      "top": 250,
+      "left": -150,
+      "attrs": { "intensity": "0" }
+    },
+    {
+      "type": "chip-piezo-sensor",
+      "id": "center",
+      "top": 250,
+      "left": 0,
+      "attrs": { "intensity": "0" }
+    },
+    {
+      "type": "chip-piezo-sensor",
+      "id": "right",
+      "top": 250,
+      "left": 150,
+      "attrs": { "intensity": "0" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "left:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "left:GND", "esp:GND", "black", [ "v0" ] ],
+    [ "left:SIG", "esp:34", "green", [ "v0" ] ],
+    [ "center:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "center:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "center:SIG", "esp:35", "green", [ "v0" ] ],
+    [ "right:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "right:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "right:SIG", "esp:32", "green", [ "v0" ] ]
+  ]
+}
