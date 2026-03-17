@@ -11,6 +11,7 @@
         "type": "latest",
         "sizeX": 6,
         "sizeY": 5,
+        
         "config": {
           "datasources": [
             {
