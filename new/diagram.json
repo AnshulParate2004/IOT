@@ -12,6 +12,7 @@
       "attrs": { "intensity": "0" }
     },
     {
+      
       "type": "chip-piezo-sensor",
       "id": "center",
       "top": 250,
