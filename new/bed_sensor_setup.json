@@ -383,34 +383,3 @@
           "type": "singleEntity",
           "resolveMultiple": false,
           "singleEntity": {
-            "entityType": "DEVICE",
-            "id": "160065b0-1fc1-11f1-8f13-7592a37a10f8"
-          }
-        }
-      }
-    },
-    "filters": {},
-    "timewindow": {
-      "selectedTab": 0,
-      "realtime": {
-        "realtimeType": 0,
-        "timewindowMs": 3600000
-      },
-      "aggregation": {
-        "type": "NONE",
-        "limit": 50000
-      }
-    },
-    "settings": {
-      "stateControllerId": "entity",
-      "showTitle": false,
-      "showDashboardsSelect": true,
-      "showEntitiesSelect": true,
-      "showDashboardTimewindow": true,
-      "showDashboardExport": true,
-      "toolbarAlwaysOpen": true
-    }
-  },
-  "name": "Bed Sensor Setup",
-  "resources": []
-}
